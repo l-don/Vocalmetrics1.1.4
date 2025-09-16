@@ -220,7 +220,21 @@ var DetailsArea = new Class({
                             /^(https?:\/\/|www\.)/i.test(strVal)
                         );
 
-                        if (looksLikeUrl) {
+                        // detect local png filename (e.g. "cover.png")
+                        var looksLikePng = isString && /\.png$/i.test(strVal);
+
+                        if (looksLikePng) {
+                            // For local usage: assume image is in data/img/<name>
+                            var imgPathLocal = 'data/img/' + strVal;
+                            valueDOMElement.empty();
+                            var btn = new Element('a', { href: '#', text: strVal });
+                            btn.addEvent('click', function(e){
+                                if(e && e.preventDefault) e.preventDefault();
+                                that.openImageModal(imgPathLocal);
+                            });
+                            valueDOMElement.grab(btn);
+                        }
+                        else if (looksLikeUrl) {
                             // Normalize href to include scheme
                             var href = /^https?:\/\//i.test(strVal) ? strVal : ('https://' + strVal);
                             valueDOMElement.empty();
@@ -245,4 +259,39 @@ var DetailsArea = new Class({
 
     }
 
+});
+
+// Modal helpers appended to prototype
+DetailsArea.implement({
+    openImageModal: function(path){
+        try{
+            var modal = document.getElementById('vm-image-modal');
+            if(!modal) return;
+            var img = modal.querySelector('.vm-modal-img');
+            var closeBtn = modal.querySelector('.vm-modal-close');
+            img.setAttribute('src', path);
+            modal.style.display = 'block';
+            // attach close handler once
+            var closeHandler = function(e){
+                if(e && e.preventDefault) e.preventDefault();
+                modal.style.display = 'none';
+                img.setAttribute('src', '');
+            };
+            closeBtn.addEventListener('click', closeHandler);
+            // also close when clicking backdrop
+            var backdrop = modal.querySelector('.vm-modal-backdrop');
+            if(backdrop){
+                backdrop.addEventListener('click', closeHandler);
+            }
+        }catch(e){}
+    },
+    closeImageModal: function(){
+        try{
+            var modal = document.getElementById('vm-image-modal');
+            if(!modal) return;
+            var img = modal.querySelector('.vm-modal-img');
+            modal.style.display = 'none';
+            img.setAttribute('src', '');
+        }catch(e){}
+    }
 });
