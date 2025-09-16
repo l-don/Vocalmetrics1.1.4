@@ -1,0 +1,2151 @@
+/* grayscale */
+/* adminView headings hover, icons hover */
+/* bright text in info panel */
+/* adminView dataset headings */
+/* adminView icons, descriptions */
+/* adminView icons, descriptions */
+/* adminView main headings, plus icons */
+/* dark app background */
+/* color */
+/* semantic assignments */
+@font-face {
+  font-family: "Miso Light";
+  src: url('fonts/miso-lig.woff') format('woff'), url('fonts/miso-lig.ttf') format('truetype'), url('fonts/miso-lig.otf') format('opentype'), url('fonts/miso-lig.svg') format('svg');
+}
+
+@font-face {
+  font-family: "Miso Regular";
+  src: url('fonts/miso.woff') format('woff'), url('fonts/miso.ttf') format('truetype'), url('fonts/miso.otf') format('opentype'), url('fonts/miso.svg') format('svg');
+}
+
+@font-face {
+  font-family: "Miso Bold";
+  src: url('fonts/miso-bol.woff') format('woff'), url('fonts/miso-bol.ttf') format('truetype'), url('fonts/miso-bol.otf') format('opentype'), url('fonts/miso-bol.svg') format('svg');
+}
+
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 21, sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 31, sass/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 42, sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 68, sass/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 83, sass/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+/* line 91, sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 103, sass/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 112, sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 126, sass/_normalize.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  margin: 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 135, sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 144, sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 148, sass/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 156, sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+/* line 164, sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 174, sass/_normalize.scss */
+p,
+pre {
+  margin: 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 185, sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 195, sass/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+/* line 205, sass/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+/* line 214, sass/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 223, sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 232, sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 239, sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 243, sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 258, sass/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 262, sass/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+/* line 272, sass/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+/* line 281, sass/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 295, sass/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 304, sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 316, sass/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+/* line 328, sass/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 336, sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 348, sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 365, sass/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 378, sass/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 395, sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 406, sass/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 418, sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 431, sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 444, sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+/* line 453, sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 463, sass/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 476, sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 17, sass/_main.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 21, sass/_main.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 32, sass/_main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 37, sass/_main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 46, sass/_main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 59, sass/_main.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 67, sass/_main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 77, sass/_main.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 85, sass/_main.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 120, sass/_main.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 128, sass/_main.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 139, sass/_main.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 148, sass/_main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 165, sass/_main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 178, sass/_main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 195, sass/_main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 200, sass/_main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 209, sass/_main.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 234, sass/_main.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 242, sass/_main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 246, sass/_main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 250, sass/_main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 260, sass/_main.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 265, sass/_main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 270, sass/_main.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 275, sass/_main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 279, sass/_main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 289, sass/_main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 295, sass/_main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 1, sass/_general.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, sass/_general.scss */
+html {
+  height: 100%;
+}
+
+/* line 8, sass/_general.scss */
+body {
+  background: #262626;
+  font-size: 9pt;
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: background 300ms;
+  -moz-transition: background 300ms;
+  -o-transition: background 300ms;
+  transition: background 300ms;
+}
+
+/* LINK
+------------------------------------*/
+/* line 21, sass/_general.scss */
+a, a:link {
+  text-decoration: none;
+  color: #2b5f6e;
+  -webkit-transition: all 150ms;
+  -moz-transition: all 150ms;
+  -o-transition: all 150ms;
+  transition: all 150ms;
+}
+
+/* line 26, sass/_general.scss */
+a:hover {
+  /*color: teal !important;*/
+  color: #e6e6e6;
+  background-color: #262626;
+}
+
+/* BUTTON
+------------------------------------*/
+/* line 34, sass/_general.scss */
+button {
+  background-color: #262626;
+  padding: .5em;
+  color: #e6e6e6;
+  border: none;
+}
+/* line 40, sass/_general.scss */
+button:hover {
+  color: #e8b741;
+}
+/* line 44, sass/_general.scss */
+button:active {
+  background-color: #e8b741;
+  color: #262626;
+}
+
+/* line 51, sass/_general.scss */
+.interactionBtn {
+  cursor: pointer;
+}
+
+/* LAYOUT
+------------------------------------*/
+/* line 57, sass/_general.scss */
+#outerSpace {
+  height: 100%;
+}
+
+/* line 60, sass/_general.scss */
+#canvas {
+  width: 100%;
+  height: calc(100% - 10em);
+  float: none;
+  margin: 0;
+}
+
+/* UTIL
+------------------------------------*/
+/* line 69, sass/_general.scss */
+.floatLeft {
+  float: left;
+}
+
+/* line 72, sass/_general.scss */
+.float-right {
+  float: right !important;
+}
+
+/* TEXT
+------------------------------------*/
+/* line 78, sass/_general.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 82, sass/_general.scss */
+.highlight {
+  color: #e8b741;
+}
+
+/* MENUS
+------------------------------------*/
+/* line 89, sass/_general.scss */
+div#hoverbox, div#tooltip, div#contextmenu, div#legend {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  max-width: 350px;
+  max-height: 350px;
+  z-index: 20;
+  padding: 10px;
+  display: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+/* line 105, sass/_general.scss */
+div#hoverbox span, div#tooltip span, div#contextmenu span {
+  display: block;
+  padding: 0.1em 0;
+  cursor: crosshair;
+}
+
+/* line 110, sass/_general.scss */
+div#hoverbox span:hover, div#tooltip span:hover, div#contextmenu span:hover {
+  color: teal;
+}
+
+/* line 114, sass/_general.scss */
+div#hoverbox span.chosen-group-element, div#tooltip span.chosen-group-element {
+  color: teal;
+}
+
+/*Bottom Menu*/
+/* line 119, sass/_general.scss */
+nav {
+  width: 100%;
+  height: 3em;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* line 127, sass/_general.scss */
+nav a, nav a:link {
+  color: white;
+}
+/* line 130, sass/_general.scss */
+nav a:hover {
+  color: teal !important;
+}
+/* line 134, sass/_general.scss */
+nav ul {
+  position: relative;
+  padding: 0 20px;
+  margin: 0;
+  list-style: none;
+}
+/* line 140, sass/_general.scss */
+nav ul li {
+  float: left;
+}
+/* line 143, sass/_general.scss */
+nav ul li a {
+  display: block;
+  padding: 10px 30px;
+}
+
+/* line 151, sass/_general.scss */
+div#searchbox {
+  width: 14%;
+  height: 2em;
+  top: .5em;
+  left: 43%;
+  background-color: #333333;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+/* line 161, sass/_general.scss */
+div#searchbox #searcheye {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  left: 0;
+  opacity: .3;
+  background-image: url("../img/icon_searcheye.svg");
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 172, sass/_general.scss */
+div#searchbox #searcheye:hover {
+  opacity: .9;
+}
+/* line 176, sass/_general.scss */
+div#searchbox input {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  left: 15%;
+  color: #e6e6e6;
+  background: none;
+  border: none;
+}
+
+/* line 187, sass/_general.scss */
+#settingsBtn {
+  width: 2.5em;
+  height: 2.5em;
+  display: block;
+  position: absolute;
+  right: 50px;
+  bottom: .3em;
+  opacity: .3;
+  background-image: url("../img/icon_wheel.svg");
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* line 198, sass/_general.scss */
+#settingsBtn:hover {
+  opacity: .9;
+}
+
+/**
+ * 	SOUND DETAILS
+ * -----------------------------------------------------
+ */
+/* line 207, sass/_general.scss */
+div#infobox {
+  width: calc(100% - 4em);
+  height: 4em;
+  padding: 1.5em 2em;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* line 215, sass/_general.scss */
+div#infobox.candidate p.h1 {
+  color: #ed1e79;
+}
+
+/* line 221, sass/_general.scss */
+#dataset-image, #dataset-headings, .dataset-features-ratable, .dataset-features-other {
+  float: left;
+}
+
+/* line 225, sass/_general.scss */
+#dataset-image {
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* line 231, sass/_general.scss */
+#dataset-image.w {
+  background: rgba(177, 82, 124, 0.9);
+}
+
+/* line 234, sass/_general.scss */
+#dataset-image.m {
+  background: rgba(82, 101, 177, 0.9);
+}
+
+/* line 238, sass/_general.scss */
+#dataset-headings {
+  /*margin-right: 50px;*/
+}
+
+/* line 242, sass/_general.scss */
+p.h1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  width: 320px;
+}
+
+/* line 247, sass/_general.scss */
+p.h2 {
+  color: #878787;
+}
+
+/* line 251, sass/_general.scss */
+.dataset-features-other {
+  /*margin-left: 20px;*/
+}
+
+/* line 254, sass/_general.scss */
+.dataset-features-ratable, .dataset-features-other {
+  color: white;
+}
+
+/* line 257, sass/_general.scss */
+.dataset-features-ratable span:first-child, .dataset-features-other span:first-child {
+  color: #878787;
+  width: 80px;
+  text-align: right;
+  padding-right: 5px;
+  display: inline-block;
+}
+
+/* RATING */
+/* line 266, sass/_general.scss */
+#infobox input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #bd2f56;
+  padding: 0 2px;
+}
+
+/* line 272, sass/_general.scss */
+#dataset-headings input.candidate {
+  margin-right: 3px;
+}
+
+/* line 273, sass/_general.scss */
+.dataset-features-ratable span.candidate {
+  margin-right: 3px;
+  color: #bd2f56;
+}
+
+/* line 274, sass/_general.scss */
+.dataset-features-other input.candidate {
+  margin-right: 3px;
+  width: 50px;
+}
+
+/*
+ *  TOOLBOX
+ */
+/* line 280, sass/_general.scss */
+#toolbox {
+  position: fixed;
+  top: 35%;
+  right: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  /*opacity: 0;*/
+}
+/* line 288, sass/_general.scss */
+#toolbox:hover {
+  opacity: 1;
+}
+/* line 292, sass/_general.scss */
+#toolbox .tool-level {
+  float: right;
+}
+/* line 296, sass/_general.scss */
+#toolbox .tool {
+  width: 3.5em;
+  height: 3.5em;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  opacity: 0.2;
+  margin-bottom: 1px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  cursor: pointer;
+}
+/* line 307, sass/_general.scss */
+#toolbox .tool:hover, #toolbox .tool.active {
+  opacity: 0.5;
+  background-color: black;
+}
+/* line 312, sass/_general.scss */
+#toolbox .tool#tool-add {
+  background-image: url("../img/icon_plus.svg");
+}
+/* line 315, sass/_general.scss */
+#toolbox .tool#tool-grid {
+  background-image: url("../img/icon_grid.svg");
+}
+/* line 318, sass/_general.scss */
+#toolbox .tool#tool-scheme {
+  background-image: url("../img/icon_scheme.svg");
+}
+/* line 321, sass/_general.scss */
+#toolbox .tool#tool-raters {
+  background-image: url("../img/icon_user.svg");
+}
+/* line 324, sass/_general.scss */
+#toolbox .tool#tool-weight {
+  background-image: url("../img/icon_weight.svg");
+}
+/* line 327, sass/_general.scss */
+#toolbox .tool#tool-allratings {
+  background-image: url("../img/icon_raters.svg");
+}
+/* line 332, sass/_general.scss */
+#toolbox .divider {
+  height: 1em;
+  background: none;
+}
+/* line 337, sass/_general.scss */
+#toolbox #second-level {
+  /*display: none;*/
+  padding: 8px;
+  opacity: 0.5;
+  background-color: black;
+  position: relative;
+}
+/* line 344, sass/_general.scss */
+#toolbox #second-level span {
+  display: block;
+  cursor: pointer;
+}
+/* line 348, sass/_general.scss */
+#toolbox #second-level span:hover, #toolbox #second-level span.active {
+  color: #2b5f6e;
+}
+
+/* -------------------------------------------------------------------
+ * SVG styles
+ * ------------------------------------------------------------------*/
+/* line 359, sass/_general.scss */
+svg .hidden {
+  opacity: 0;
+  /* TODO what for?*/
+}
+
+/* line 363, sass/_general.scss */
+.dataset {
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  opacity: 1;
+  fill: #4d4d4d;
+}
+/* line 372, sass/_general.scss */
+.dataset:hover circle {
+  fill: #ad9663;
+}
+/* line 373, sass/_general.scss */
+.dataset.attracted circle {
+  fill: #cccccc;
+}
+/* line 374, sass/_general.scss */
+.dataset.selected circle {
+  fill: #e8b741 !important;
+}
+/* line 375, sass/_general.scss */
+.dataset.subselected circle {
+  fill: #ad9663 !important;
+}
+/* line 376, sass/_general.scss */
+.dataset.invalid circle {
+  fill: black;
+}
+/* line 377, sass/_general.scss */
+.dataset.match circle {
+  stroke: #9f3116 !important;
+  stroke-width: 2;
+}
+/* line 378, sass/_general.scss */
+.dataset.zero circle {
+  stroke-width: 1;
+  stroke: #666666;
+  fill-opacity: 0;
+}
+/* line 383, sass/_general.scss */
+.dataset.noRating circle {
+  fill: #9f3116;
+}
+/* line 384, sass/_general.scss */
+.dataset.noRatingOfCurrentUser circle {
+  fill: #d1aeb1;
+}
+/* line 385, sass/_general.scss */
+.dataset.candidate circle {
+  fill: #ed1e79;
+}
+/* line 386, sass/_general.scss */
+.dataset.dataset.chef-0 circle {
+  fill: black;
+}
+/* line 387, sass/_general.scss */
+.dataset.dataset.chef-0.ratingMode circle {
+  fill: #ed1e79;
+}
+/* line 388, sass/_general.scss */
+.dataset.dataset.chef-1 circle {
+  fill: #2b5f6e;
+}
+/* line 389, sass/_general.scss */
+.dataset.dataset.chef-2 circle {
+  fill: #e8b741;
+  stroke-width: 1;
+  stroke: #878787;
+}
+/* line 394, sass/_general.scss */
+.dataset.dataset.rating circle {
+  fill: #9f3116;
+}
+
+/* line 398, sass/_general.scss */
+g.arc {
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.1);
+}
+
+/* line 403, sass/_general.scss */
+.grid {
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+
+/* line 407, sass/_general.scss */
+.grid line {
+  stroke: #FFF;
+  opacity: 0.1;
+}
+
+/* ----------------------------
+ * Gravity
+   --------------------------*/
+/* line 415, sass/_general.scss */
+circle.membran {
+  fill: none;
+  stroke: #666;
+}
+
+/* line 416, sass/_general.scss */
+.link {
+  stroke: #777;
+}
+
+/* line 418, sass/_general.scss */
+text.legend.feature {
+  fill: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+/*
+ * FeatureMatrix
+ */
+/* line 423, sass/_general.scss */
+#FeatureMatrix circle.vibrato {
+  fill: #26294a;
+}
+
+/* line 426, sass/_general.scss */
+#FeatureMatrix circle.glissando {
+  fill: #01545a;
+}
+
+/* line 429, sass/_general.scss */
+#FeatureMatrix circle.intensity {
+  fill: #017351;
+}
+
+/* line 432, sass/_general.scss */
+#FeatureMatrix circle.roughness {
+  fill: #03c383;
+}
+
+/* line 435, sass/_general.scss */
+#FeatureMatrix circle.breathiness {
+  fill: #fbbf45;
+}
+
+/* line 438, sass/_general.scss */
+#FeatureMatrix circle.register {
+  fill: #ef6a32;
+}
+
+/* line 441, sass/_general.scss */
+#FeatureMatrix circle.articulation {
+  fill: #ed0345;
+}
+
+/* line 444, sass/_general.scss */
+#FeatureMatrix circle.rubato {
+  fill: #710162;
+}
+
+/* line 447, sass/_general.scss */
+#FeatureMatrix circle.offbeat {
+  fill: #110141;
+}
+
+/*
+ * Flex
+ */
+/* line 455, sass/_general.scss */
+#Flex circle.subselected {
+  stroke-width: 2 !important;
+  stroke: #6b6b6b !important;
+}
+
+/* TRENDS */
+/* line 460, sass/_general.scss */
+#Flex g.node-trend.artist circle {
+  fill: red;
+}
+
+/* line 463, sass/_general.scss */
+#Flex g.node-trend.label circle {
+  fill: blue;
+}
+
+/* line 466, sass/_general.scss */
+#Flex g.node-trend.genre circle {
+  fill: yellow;
+}
+
+/* line 469, sass/_general.scss */
+#Flex g.node-trend.release_year circle {
+  fill: orange;
+}
+
+/* line 472, sass/_general.scss */
+#Flex g.node-trend.gender circle {
+  fill: green;
+}
+
+/*
+ * Compare
+ */
+/* line 480, sass/_general.scss */
+#Compare circle:hover {
+  fill: none !important;
+}
+
+/*
+ * Gravity
+ */
+/* line 488, sass/_general.scss */
+#Gravity circle.chef {
+  fill: yellow;
+}
+
+/*
+ * ArtWork
+ */
+/* line 496, sass/_general.scss */
+#ArtWorkView circle {
+  stroke: #488fb4;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+/*
+ * StartView
+ */
+/* line 508, sass/_general.scss */
+#canvas circle.stroke {
+  stroke: rgba(72, 143, 180, 0.8);
+}
+
+/* line 511, sass/_general.scss */
+#canvas circle.stroke:hover {
+  fill: teal;
+  transition-property: fill;
+  transition-duration: 1s;
+}
+
+/*
+ * pie
+ */
+/* line 524, sass/_general.scss */
+path.slice:hover {
+  fill: teal;
+  transition-property: fill;
+  transition-duration: 1s;
+}
+
+/* line 530, sass/_general.scss */
+path.slice.vibrato {
+  fill: #26294a;
+}
+
+/* line 533, sass/_general.scss */
+path.slice.glissando {
+  fill: #01545a;
+}
+
+/* line 536, sass/_general.scss */
+path.slice.intensity {
+  fill: #017351;
+}
+
+/* line 539, sass/_general.scss */
+path.slice.roughness {
+  fill: #03c383;
+}
+
+/* line 542, sass/_general.scss */
+path.slice.breathiness {
+  fill: #fbbf45;
+}
+
+/* line 545, sass/_general.scss */
+path.slice.register {
+  fill: #ef6a32;
+}
+
+/* line 548, sass/_general.scss */
+path.slice.articulation {
+  fill: #ed0345;
+}
+
+/* line 551, sass/_general.scss */
+path.slice.rubato {
+  fill: #710162;
+}
+
+/* line 554, sass/_general.scss */
+path.slice.offbeat {
+  fill: #110141;
+}
+
+/**
+ * CSS3 animations	
+ */
+@keyframes vibrate {
+  /* line 563, sass/_general.scss */
+  0% {
+    fill: #39B8C6;
+  }
+
+  /* line 566, sass/_general.scss */
+  50% {
+    fill: #7cd393;
+  }
+
+  /* line 569, sass/_general.scss */
+  100% {
+    fill: #dbd557;
+  }
+}
+
+/* line 574, sass/_general.scss */
+.clear {
+  clear: both;
+}
+
+/**
+ * Overwrites
+*/
+/* line 581, sass/_general.scss */
+.grey-dark {
+  color: #333 !important;
+}
+
+/* line 584, sass/_general.scss */
+.grey-light {
+  color: #CCC !important;
+}
+
+/* line 587, sass/_general.scss */
+.grey-medium {
+  color: #777 !important;
+}
+
+/* line 1, sass/_brightTheme.scss */
+body.brightTheme {
+  background: #ebebeb;
+}
+/* line 7, sass/_brightTheme.scss */
+body.brightTheme svg .dataset {
+  fill: #999999;
+}
+/* line 10, sass/_brightTheme.scss */
+body.brightTheme svg .dataset.attracted circle {
+  fill: #333333 !important;
+}
+/* line 15, sass/_brightTheme.scss */
+body.brightTheme #infobox {
+  color: #333333 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 20, sass/_brightTheme.scss */
+body.brightTheme #infobox .dataset-features-ratable, body.brightTheme #infobox .dataset-features-other {
+  color: #333333 !important;
+}
+/* line 24, sass/_brightTheme.scss */
+body.brightTheme #infobox .dataset-features-ratable span:first-child, body.brightTheme #infobox .dataset-features-other span:first-child {
+  color: #999999;
+}
+/* line 29, sass/_brightTheme.scss */
+body.brightTheme nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 33, sass/_brightTheme.scss */
+body.brightTheme nav a {
+  color: #333333;
+}
+/* line 38, sass/_brightTheme.scss */
+body.brightTheme #toolbox .tool {
+  /*background-color: black;*/
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  filter: invert(100%);
+}
+/* line 43, sass/_brightTheme.scss */
+body.brightTheme .grid line {
+  stroke: #000;
+}
+/* line 47, sass/_brightTheme.scss */
+body.brightTheme #mainMenu, body.brightTheme .ModelMask {
+  /*border: 3px solid $gray-80;*/
+  -webkit-box-shadow: 2px 2px 10px #333333;
+  -moz-box-shadow: 2px 2px 10px #333333;
+  box-shadow: 2px 2px 10px #333333;
+}
+/* line 52, sass/_brightTheme.scss */
+body.brightTheme div#searchbox {
+  background-color: #cccccc;
+}
+/* line 55, sass/_brightTheme.scss */
+body.brightTheme div#searchbox #searcheye {
+  opacity: .3;
+  /*background-image: url("../img/icon_searcheye.svg");*/
+  /*-webkit-filter: invert(100%);*/
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  filter: invert(100%);
+}
+/* line 61, sass/_brightTheme.scss */
+body.brightTheme div#searchbox #searcheye:hover {
+  opacity: .9;
+}
+/* line 65, sass/_brightTheme.scss */
+body.brightTheme div#searchbox input {
+  color: #333333;
+}
+/* line 70, sass/_brightTheme.scss */
+body.brightTheme #settingsBtn {
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  filter: invert(100%);
+}
+/* line 75, sass/_brightTheme.scss */
+body.brightTheme #audioplayer p {
+  color: #cccccc;
+}
+/* line 79, sass/_brightTheme.scss */
+body.brightTheme #audioplayer p span.active {
+  color: #333333;
+}
+
+/* only lucid, recieves events */
+/*.transparent { opacity: 0 !important; }*/
+/* does not recieve events, but keeps dimensions etc */
+/*.invisible { visibility: hidden !important; }*/
+/* only present in DOM, no events, no dimensions etc */
+/*.hidden { display: none !important; }*/
+/*.ani-fadeIn { -webkit-animation: fadeIn 0.5s; visibility: visible !important; }*/
+@-webkit-keyframes fadeIn {
+  /* line 10, sass/_animations.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 11, sass/_animations.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/*.ani-fadeOut { -webkit-animation: fadeOut 0.5s; visibility: hidden !important; }*/
+@-webkit-keyframes fadeOut {
+  /* line 16, sass/_animations.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 17, sass/_animations.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+/* line 6, sass/_AdminView.scss */
+#AdminView {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 5%;
+  height: 80%;
+  /* overwrites */
+}
+/* line 13, sass/_AdminView.scss */
+#AdminView #admin-left, #AdminView #admin-right {
+  width: 42%;
+  height: 100%;
+  /* overwrites */
+}
+/* line 18, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list, #AdminView #admin-right .dataset-list {
+  height: 80%;
+  overflow-y: scroll;
+}
+/* line 22, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list::-webkit-scrollbar, #AdminView #admin-right .dataset-list::-webkit-scrollbar {
+  display: none;
+}
+/* line 26, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset, #AdminView #admin-left .dataset-list .addBtn, #AdminView #admin-right .dataset-list .dataset, #AdminView #admin-right .dataset-list .addBtn {
+  margin: 0 0 3em;
+  height: 7em;
+}
+/* line 31, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset .icon, #AdminView #admin-left .dataset-list .addBtn .icon, #AdminView #admin-right .dataset-list .dataset .icon, #AdminView #admin-right .dataset-list .addBtn .icon {
+  cursor: pointer;
+  float: right;
+  width: 7em;
+  height: 7em;
+  margin: 0 0 0 1.5em;
+  background-color: #666666;
+}
+/* line 40, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset .name, #AdminView #admin-left .dataset-list .addBtn .name, #AdminView #admin-right .dataset-list .dataset .name, #AdminView #admin-right .dataset-list .addBtn .name {
+  cursor: pointer;
+  color: #999999;
+  font-size: 1.7em;
+  line-height: 1.5em;
+  height: 1.5em;
+  overflow: hidden;
+}
+/* line 48, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset .desc, #AdminView #admin-left .dataset-list .addBtn .desc, #AdminView #admin-right .dataset-list .dataset .desc, #AdminView #admin-right .dataset-list .addBtn .desc {
+  color: #666666;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  height: 2.4em;
+  overflow: hidden;
+}
+/* line 55, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset .stats, #AdminView #admin-left .dataset-list .addBtn .stats, #AdminView #admin-right .dataset-list .dataset .stats, #AdminView #admin-right .dataset-list .addBtn .stats {
+  color: #666666;
+  font-size: 1.2em;
+}
+/* line 61, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset:hover .icon, #AdminView #admin-left .dataset-list .addBtn:hover .icon, #AdminView #admin-right .dataset-list .dataset:hover .icon, #AdminView #admin-right .dataset-list .addBtn:hover .icon {
+  background-color: #e6e6e6;
+}
+/* line 62, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset:hover .name, #AdminView #admin-left .dataset-list .addBtn:hover .name, #AdminView #admin-right .dataset-list .dataset:hover .name, #AdminView #admin-right .dataset-list .addBtn:hover .name {
+  color: #e6e6e6;
+}
+/* line 64, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset:hover .name:hover, #AdminView #admin-left .dataset-list .addBtn:hover .name:hover, #AdminView #admin-right .dataset-list .dataset:hover .name:hover, #AdminView #admin-right .dataset-list .addBtn:hover .name:hover {
+  text-decoration: underline;
+}
+/* line 68, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset:hover .desc, #AdminView #admin-left .dataset-list .dataset:hover .stats, #AdminView #admin-left .dataset-list .addBtn:hover .desc, #AdminView #admin-left .dataset-list .addBtn:hover .stats, #AdminView #admin-right .dataset-list .dataset:hover .desc, #AdminView #admin-right .dataset-list .dataset:hover .stats, #AdminView #admin-right .dataset-list .addBtn:hover .desc, #AdminView #admin-right .dataset-list .addBtn:hover .stats {
+  color: #999999;
+}
+/* line 71, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .dataset.current .icon, #AdminView #admin-left .dataset-list .addBtn.current .icon, #AdminView #admin-right .dataset-list .dataset.current .icon, #AdminView #admin-right .dataset-list .addBtn.current .icon {
+  background: #e8b741;
+}
+/* line 76, sass/_AdminView.scss */
+#AdminView #admin-left .dataset-list .addBtn .icon, #AdminView #admin-right .dataset-list .addBtn .icon {
+  background-color: #333333 !important;
+  background-image: url("../img/icon_plus_dark.svg");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 91, sass/_AdminView.scss */
+#AdminView #admin-left #admin-users .dataset .icon, #AdminView #admin-left #admin-users .addBtn .icon, #AdminView #admin-right #admin-users .dataset .icon, #AdminView #admin-right #admin-users .addBtn .icon {
+  float: left;
+  width: 5.5em;
+  height: 5.5em;
+  margin: 0.75em 1.5em 0.75em 0;
+  -webkit-border-radius: 5.5em 5.5em;
+  -moz-border-radius: 5.5em / 5.5em;
+  border-radius: 5.5em / 5.5em;
+}
+/* line 98, sass/_AdminView.scss */
+#AdminView #admin-left #admin-users .dataset .name, #AdminView #admin-left #admin-users .addBtn .name, #AdminView #admin-right #admin-users .dataset .name, #AdminView #admin-right #admin-users .addBtn .name {
+  padding-top: 0.4em;
+}
+/* line 101, sass/_AdminView.scss */
+#AdminView #admin-left #admin-users .dataset .desc, #AdminView #admin-left #admin-users .addBtn .desc, #AdminView #admin-right #admin-users .dataset .desc, #AdminView #admin-right #admin-users .addBtn .desc {
+  height: 1.2em;
+}
+/* line 104, sass/_AdminView.scss */
+#AdminView #admin-left #admin-users .dataset .stats, #AdminView #admin-left #admin-users .addBtn .stats, #AdminView #admin-right #admin-users .dataset .stats, #AdminView #admin-right #admin-users .addBtn .stats {
+  margin-bottom: 1.2em;
+}
+/* line 113, sass/_AdminView.scss */
+#AdminView h1 {
+  font-family: "Miso Light";
+  font-size: 4em;
+  margin: 0 0 1.5em;
+  color: #999999;
+}
+/* line 120, sass/_AdminView.scss */
+#AdminView h2 {
+  font-weight: normal;
+}
+/* line 125, sass/_AdminView.scss */
+#AdminView #admin-left {
+  float: left;
+  text-align: right;
+}
+/* line 129, sass/_AdminView.scss */
+#AdminView #admin-right {
+  float: right;
+}
+
+/* line 3, sass/_GravityView.scss */
+#Gravity .chef-0 {
+  /*display: none;*/
+}
+/* line 8, sass/_GravityView.scss */
+#Gravity .grid circle {
+  fill: none;
+  stroke-width: 1;
+  stroke: #4d4d4d;
+}
+/* line 14, sass/_GravityView.scss */
+#Gravity .grid text {
+  fill: #4d4d4d;
+}
+
+/* line 3, sass/_CompareView.scss */
+#Compare .shape {
+  fill: #2b5f6e;
+}
+/* line 8, sass/_CompareView.scss */
+#Compare .circle-ticks {
+  fill: none;
+  stroke: #333333;
+  /* prevent hover effect (yellow color fill) */
+}
+/* line 12, sass/_CompareView.scss */
+#Compare .circle-ticks .tickLabel {
+  fill: #666666;
+  stroke: none;
+}
+/* line 18, sass/_CompareView.scss */
+#Compare .circle-ticks circle {
+  fill: none;
+}
+/* line 21, sass/_CompareView.scss */
+#Compare .line-ticks {
+  fill: none;
+  stroke: #333333;
+}
+/* line 25, sass/_CompareView.scss */
+#Compare .line-ticks .axisLabel {
+  fill: #666666;
+  stroke: none;
+}
+
+/* line 3, sass/_ui.scss */
+.ui#numberInput {
+  position: fixed;
+  /*bottom: 20%;*/
+  width: 10%;
+  top: 7em;
+  right: 0;
+  /*left: 10%;*/
+  padding: 1%;
+  background-color: #e6e6e6;
+  color: #262626;
+  z-index: 800;
+  opacity: .7;
+}
+/* line 17, sass/_ui.scss */
+.ui#weightInput {
+  position: fixed;
+  /*left: 0;*/
+  width: 10%;
+  top: 7em;
+  right: 0;
+  padding: 1%;
+  background-color: #e6e6e6;
+  color: #262626;
+  z-index: 900;
+  opacity: .7;
+}
+/* line 30, sass/_ui.scss */
+.ui#mainMenu {
+  position: fixed;
+  top: 20%;
+  width: 30%;
+  left: 35%;
+  padding: 1em;
+  background-color: #e6e6e6;
+  color: #262626;
+  z-index: 900;
+  opacity: .7;
+}
+/* line 42, sass/_ui.scss */
+.ui#mainMenu h2 {
+  font-size: 4em;
+  margin-bottom: .3em;
+  font-family: "Miso Bold";
+}
+/* line 48, sass/_ui.scss */
+.ui#mainMenu p {
+  margin-bottom: 1em;
+}
+/* line 51, sass/_ui.scss */
+.ui#mainMenu p.close {
+  text-align: right;
+  font-size: 2em;
+  margin-bottom: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+}
+/* line 62, sass/_ui.scss */
+.ui.ModelMask {
+  /*width: 58%;*/
+  position: fixed;
+  top: 20%;
+  padding: 1%;
+  background-color: #e6e6e6;
+  color: #262626;
+  z-index: 900;
+  opacity: .95;
+  max-height: 70%;
+  overflow-y: scroll;
+}
+/* line 74, sass/_ui.scss */
+.ui.ModelMask h2 {
+  font-size: 3em;
+  margin-bottom: .3em;
+  font-family: "Miso Light";
+}
+/* line 79, sass/_ui.scss */
+.ui.ModelMask h3 {
+  margin-top: 1em;
+}
+/* line 83, sass/_ui.scss */
+.ui.ModelMask button {
+  padding: .5em;
+  margin: .5em .5em .5em 0;
+}
+/* line 87, sass/_ui.scss */
+.ui.ModelMask button.save {
+  background-color: #8ea82f;
+}
+/* line 90, sass/_ui.scss */
+.ui.ModelMask button.delete {
+  background-color: #9f3116;
+}
+/* line 93, sass/_ui.scss */
+.ui.ModelMask button.plus {
+  width: 3em;
+  height: 3em;
+}
+/* line 98, sass/_ui.scss */
+.ui.ModelMask button:disabled {
+  opacity: .3;
+}
+/* line 104, sass/_ui.scss */
+.ui.ModelMask select:disabled {
+  opacity: .3;
+}
+/* line 108, sass/_ui.scss */
+.ui.ModelMask p {
+  margin-bottom: 1em;
+}
+/* line 111, sass/_ui.scss */
+.ui.ModelMask p.alignRight {
+  text-align: right;
+}
+/* line 114, sass/_ui.scss */
+.ui.ModelMask p.alignRight button {
+  margin: .5em 0 .5em .5em;
+}
+/* line 121, sass/_ui.scss */
+.ui.ModelMask table td {
+  padding: .3em;
+}
+/* line 124, sass/_ui.scss */
+.ui.ModelMask table td.value {
+  width: 80%;
+}
+/* line 127, sass/_ui.scss */
+.ui.ModelMask table td.value input {
+  width: 100%;
+}
+/* line 130, sass/_ui.scss */
+.ui.ModelMask table td.value input[type=checkbox] {
+  width: auto;
+}
+/* line 138, sass/_ui.scss */
+.ui.ModelMask#UserMask {
+  left: 53%;
+}
+/* line 142, sass/_ui.scss */
+.ui.ModelMask#ProjectMask {
+  right: 53%;
+}
+/* line 147, sass/_ui.scss */
+.ui.ModelMask#ProjectMask .relationals .upArrow, .ui.ModelMask#ProjectMask .relationals .downArrow {
+  color: #999999;
+  cursor: pointer;
+}
+/* line 151, sass/_ui.scss */
+.ui.ModelMask#ProjectMask .relationals .upArrow:hover, .ui.ModelMask#ProjectMask .relationals .downArrow:hover {
+  color: inherit;
+}
+/* line 156, sass/_ui.scss */
+.ui.ModelMask#ProjectMask .relationals .text {
+  cursor: pointer;
+}
+/* line 158, sass/_ui.scss */
+.ui.ModelMask#ProjectMask .relationals .text:hover {
+  text-decoration: underline;
+}
+/* line 165, sass/_ui.scss */
+.ui.ModelMask#FeatureDefinitionMask {
+  left: 53%;
+  z-index: 910;
+}
+/* line 170, sass/_ui.scss */
+.ui.ModelMask#DatasetMask {
+  left: 40%;
+}
+/* line 175, sass/_ui.scss */
+.ui.ModelMask#DatasetMask input[type=range] {
+  width: 90%;
+}
+/* line 178, sass/_ui.scss */
+.ui.ModelMask#DatasetMask input.numberBox {
+  position: absolute;
+  width: 5%;
+  opacity: .5;
+}
+
+/* line 189, sass/_ui.scss */
+#audioplayer {
+  position: fixed;
+  z-index: 20;
+  top: 20px;
+  right: 20px;
+}
+/* line 195, sass/_ui.scss */
+#audioplayer audio {
+  opacity: 0.5;
+}
+/* line 198, sass/_ui.scss */
+#audioplayer audio:hover {
+  opacity: 1;
+}
+/* line 203, sass/_ui.scss */
+#audioplayer p {
+  text-align: right;
+  color: #4d4d4d;
+}
+/* line 207, sass/_ui.scss */
+#audioplayer p span {
+  cursor: pointer;
+}
+/* line 210, sass/_ui.scss */
+#audioplayer p span.active {
+  color: #999999;
+}
+
+/* outside of SVG container */
+/* line 3, sass/_Flex.scss */
+#toolbox #tool-limit {
+  background-image: url("../img/icon_limes.svg");
+}
+/* line 6, sass/_Flex.scss */
+#toolbox #tool-diameter {
+  background-image: url("../img/icon_diameter.svg");
+}
+/* line 9, sass/_Flex.scss */
+#toolbox #tool-transparency {
+  background-image: url("../img/icon_transparency.svg");
+}
+/* line 12, sass/_Flex.scss */
+#toolbox .tool#tool-average {
+  background-image: url("../img/icon_average.svg");
+}
+/* line 15, sass/_Flex.scss */
+#toolbox .tool#tool-range {
+  background-image: url("../img/icon_range.svg");
+}
+
+/* line 23, sass/_Flex.scss */
+#Flex .average circle {
+  fill: #2b5f6e;
+}
+/* line 24, sass/_Flex.scss */
+#Flex .average circle.zero {
+  stroke: #2b5f6e;
+}
+/* line 27, sass/_Flex.scss */
+#Flex text.groupLabel, #Flex text.trendLabel {
+  fill: #4d4d4d;
+  font-size: 10px;
+}
+/* line 33, sass/_Flex.scss */
+#Flex .axis path, #Flex .axis line {
+  fill: none;
+  stroke: #333333;
+  shape-rendering: crispEdges;
+}
+/* line 39, sass/_Flex.scss */
+#Flex .axis text {
+  font-family: sans-serif;
+  font-size: 11px;
+  fill: #666666;
+}
+/* line 44, sass/_Flex.scss */
+#Flex .axis text.axisLabel {
+  fill: #999999;
+}

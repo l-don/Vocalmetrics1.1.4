@@ -1,0 +1,31 @@
+{
+  "name": "Datagnan",
+  "version": "0.0.1",
+  // "description": "exploring multiple dimensions of singing in early popular music recordings",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "title": "Datagnan",
+    "icon": "link.png",
+    "toolbar": false,
+    "fullscreen": true,
+    "frame": false,
+    // "width": 1100,
+    // "height": 750,
+    "position": "mouse",
+    "min_width": 800,
+    "min_height": 600,
+    // "max_width": 800,
+    // "max_height": 600,
+    "as_desktop": false,
+    // "resizable": true,
+    "always-on-top": false,
+    "show_in_taskbar": true,
+    "show": true,
+    "kiosk": false
+  },
+  "author": "Felix Schönfeld"
+  // "license": "BSD-2-Clause"
+}

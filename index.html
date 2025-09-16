@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Vocalmetrics</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/vocalmetrics.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+
+        <div id="outerSpace">
+
+            <div id="canvas"></div>
+
+            <nav id="navigation" class="invisible">
+                <ul>
+                    <li>
+                        <a href="javascript: void(0)" id="btn_Flex" class="button">Scatterplot</a>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0)" id="btn_Gravity" class="button">Prototype</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="javascript: void(0)" id="btn_FeatureMatrix" class="button">Timeline</a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="javascript: void(0)" id="btn_Compare" class="button">Compare</a>
+                    </li>
+                    <!--<li>-->
+                        <!--<a href="javascript: void(0)" id="btn_Gravity" class="button">Gravitation</a>-->
+                    <!--</li>-->
+
+                    <!-- <li>	// no functionality implemented
+                        <a href="javascript: void(0)">Künstler</a>
+                        <ul>
+                            <li><a href="javascript: void(0)" id="btn_ArtWork" class="button">Portrait</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0)">Komponenten</a>
+                        <ul>
+                            <li><a href="javascript: void(0)" id="btn_PieView" class="button">Pie</a></li>
+                            <li><a href="javascript: void(0)" id="btn_Radar" class="button">Radar</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            
+            <div id="settingsBtn" class="interactionBtn"></div>
+            
+            </nav>
+
+
+        </div>
+        <!-- TODO include minified files for production -->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>-->
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script> $j = jQuery.noConflict(); </script>
+        
+        <script src="js/vendor/mootools-core-1.5.0-full-nocompat.js"></script>
+        <script src="js/vendor/mootools-more-1.4.0.1.min.js"></script>
+
+        <script src="js/vendor/underscore-min.js"></script>
+        
+        <script src="js/vendor/d3.v2.js"></script>
+        <script src="js/vendor/move.min.js"></script>
+        <script src="js/vendor/mousetrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        
+        <!-- main script -->
+        <script src="js/main.js"></script>
+        
+        <!-- moo classes -->
+        <script src="js/AbstractClass.js"></script>
+        <script src="js/DataModel.js"></script>
+        <script src="js/VM.js"></script>
+        <script src="js/DataManager.js"></script>
+        
+        <script src="js/storage/StorageManagerJSON.js"></script>
+        <script src="js/storage/StorageManagerJSONFilePHP.js"></script>
+        <script src="js/storage/StorageManagerJSONFileNodeJS.js"></script>
+        
+
+        <script src="js/ui/UI.js"></script>
+        <script src="js/ui/UIElement.js"></script>
+        <script src="js/ui/DetailsArea.js"></script>
+        <script src="js/ui/AudioPlayer.js"></script>
+        <script src="js/ui/ContextMenu.js"></script>
+        <script src="js/ui/Tooltip.js"></script>
+        <script src="js/ui/ToolBox.js"></script>
+        <script src="js/ui/MainMenu.js"></script>
+        <script src="js/ui/ModelMask/ModelMask.js"></script>
+        <script src="js/ui/ModelMask/UserMask.js"></script>
+        <script src="js/ui/ModelMask/ProjectMask.js"></script>
+        <script src="js/ui/ModelMask/FeatureDefinitionMask.js"></script>
+        <script src="js/ui/ModelMask/DatasetMask.js"></script>
+        <script src="js/Canvas.js"></script>
+        <script src="js/util/Geometry.js"></script>
+
+        <script src="js/models/AbstractModel.js"></script>
+        <script src="js/models/User.js"></script>
+        <script src="js/models/Project.js"></script>
+        <script src="js/models/FeatureDefinition.js"></script>
+        <script src="js/models/Feature.js"></script>
+        <script src="js/models/Context.js"></script>
+        <script src="js/models/Dataset.js"></script>
+        <script src="js/models/Rating.js"></script>
+
+        <script src="js/views/View.js"></script>
+		<script src="js/views/Admin/View.Admin.js"></script>
+        <script src="js/views/Prototype/View.Gravity.js"></script>
+        <script src="js/views/Flex/View.Flex.js"></script>
+        <script src="js/views/StarPlot/View.Compare.js"></script>
+        <script src="js/views/StarPlot/View.Comp.Radar.js"></script>
+        <script src="js/views/FeatureMatrix/View.FeatureMatrix.js"></script>
+
+    </body>
+</html>

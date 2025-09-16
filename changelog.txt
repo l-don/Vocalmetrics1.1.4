@@ -1,0 +1,16 @@
+v1.1.3
+~ show app version in main menu
+~ "export data" dialog now working in local version
+~ update details area while rating a data set in egg cell mode
+
+v1.1.2
+~ avoid random application crashes
+
+v1.1.1
+~ a few visual design improvements
+
+v1.1.0
+~ support of multiple users and projects
+~ the structure of the multidimensional data sets is now flexible and can be defined as suitable
+~ support of multiple subjective ratings (each user can have its own rating per data set)
+~ import/ export csv files
