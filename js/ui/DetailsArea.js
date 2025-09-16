@@ -36,7 +36,7 @@ var DetailsArea = new Class({
      * @return -
      */
     render: function(){
-    	var that = this;
+        var that = this;
 
         ///////////
         // Image //
@@ -130,8 +130,43 @@ var DetailsArea = new Class({
         VM.getUI().get('outerSpace').grab(that.DOMElement, 'top');
     },
 
+    // Öffnet Links im externen System-Browser (nicht im App-Fenster)
+    openExternal: function(url, evt){
+        try {
+            if (evt && evt.preventDefault) evt.preventDefault();
+
+            // NW.js
+            if (window.nw && nw.Shell && typeof nw.Shell.openExternal === 'function') {
+                nw.Shell.openExternal(url);
+                return;
+            }
+
+            // Electron
+            if (window.require) {
+                try {
+                    var electron = window.require('electron');
+                    if (electron && electron.shell && typeof electron.shell.openExternal === 'function') {
+                        electron.shell.openExternal(url);
+                        return;
+                    }
+                } catch (e) {}
+                // Ältere NW.js-Variante
+                try {
+                    var gui = window.require('nw.gui');
+                    if (gui && gui.Shell && typeof gui.Shell.openExternal === 'function') {
+                        gui.Shell.openExternal(url);
+                        return;
+                    }
+                } catch (e) {}
+            }
+        } catch (e) {}
+
+        // Fallback: neuer Tab/Fenster im Standard-Browser
+        window.open(url, '_blank', 'noopener,noreferrer');
+    },
+
     showDataset: function( d ){
-    	var that = this;
+        var that = this;
 
         if ( d ) {
             
@@ -174,7 +209,37 @@ var DetailsArea = new Class({
                 
                 default:
                 
-                    if(valueDOMElement) valueDOMElement.set('text', value);
+                    if(valueDOMElement){
+                        // If the value looks like a URL (e.g., YouTube), render it as a clickable link
+                        var isString = (typeof value === 'string' || value instanceof String);
+                        var strVal = isString ? ('' + value).trim() : value;
+
+                        // Detect YouTube links even without scheme (e.g., 'youtube.com/watch...'), plus general URLs
+                        var looksLikeUrl = isString && (
+                            /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch|youtu\.be\/)/i.test(strVal) ||
+                            /^(https?:\/\/|www\.)/i.test(strVal)
+                        );
+
+                        if (looksLikeUrl) {
+                            // Normalize href to include scheme
+                            var href = /^https?:\/\//i.test(strVal) ? strVal : ('https://' + strVal);
+                            valueDOMElement.empty();
+                            var linkEl = new Element('a', {
+                                href: href,
+                                target: '_blank',
+                                rel: 'noopener noreferrer',
+                                text: strVal
+                            });
+                            // Immer extern öffnen (Standard-Browser) und internes Laden verhindern
+                            linkEl.addEvent('click', function(e){
+                                that.openExternal(href, e);
+                            });
+                            valueDOMElement.grab(linkEl);
+                        }
+                        else {
+                            valueDOMElement.set('text', value);
+                        }
+                    }
             }
         });
 
